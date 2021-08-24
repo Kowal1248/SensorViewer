@@ -30,9 +30,6 @@ const _buildMenu = async () => {
     {
       label: 'GPU',
     },
-    {
-      type: 'separator'
-    },
     ...gpuInformation,
     {
       type: 'separator'
@@ -43,9 +40,6 @@ const _buildMenu = async () => {
     {
       label: 'Memory',
     },
-    {
-      type: 'separator'
-    },
     ...memoryInformation,
     {
       type: 'separator'
@@ -55,9 +49,6 @@ const _buildMenu = async () => {
   const disk = [
     {
       label: 'Disk',
-    },
-    {
-      type: 'separator'
     },
     ...diskInformation,
     {
@@ -83,15 +74,15 @@ const _buildMenu = async () => {
 
 export const controller = async () => {
   try {
-    let appIcon:any = null
-      app.whenReady().then(async () => {
-        appIcon = new Tray('./icons/temperature.png')
+    let appIcon: any = null
+    app.whenReady().then(async () => {
+      appIcon = new Tray('./icons/temperature.png')
 
-        setInterval(async ()=>{
-          const contextMenu = Menu.buildFromTemplate(await _buildMenu());
-          appIcon.setContextMenu(contextMenu);
-        }, 2000)
-      })
+      setInterval(async () => {
+        const contextMenu = Menu.buildFromTemplate(await _buildMenu());
+        appIcon.setContextMenu(contextMenu);
+      }, 2000)
+    })
   } catch (e) {
     console.log(e)
   }

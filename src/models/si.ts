@@ -1,6 +1,7 @@
 import si from 'systeminformation';
+
 import * as nvme from "./nvme";
-import { formatBytes } from "./utils";
+import * as utils from "./utils";
 
 export const cpu = async () => {
   const cpuInformation = await si.cpu()
@@ -52,7 +53,7 @@ export const memory = async () => {
 
   return [
     {
-      label: `Total: ${formatBytes(memInformation.total)}`,
+      label: `Total: ${utils.formatBytes(memInformation.total)}`,
     },
     {
       label: `Used: ${Math.round((memInformation.used / memInformation.total) * 100)}%`,
