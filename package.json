@@ -1,0 +1,21 @@
+{
+  "name": "sensor-tray",
+  "version": "1.0.0",
+  "description": "Appliation to show sensor in tray for linux.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dawid Kowalczyk",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.2.2",
+    "execSync": "^1.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "systeminformation": "^5.8.0"
+  }
+}
