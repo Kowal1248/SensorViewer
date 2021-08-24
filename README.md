@@ -18,7 +18,8 @@ Easy and simply solution to check temperatur and information about your componen
 4. Write command `npm start` and check ;)
 
 ### To implement
-1. eslint
+1. eslint/prettier
 2. Type/interfaces
 3. Webpage to collect data
 4. interfaces
+5. test
