@@ -1,5 +1,5 @@
 {
-  "name": "sensor-tray",
+  "name": "SensorViewer",
   "version": "1.0.0",
   "description": "Appliation to show sensor in tray for linux.",
   "main": "index.js",

@@ -55,7 +55,7 @@ export const memory = async () => {
       label: `Total: ${formatBytes(memInformation.total)}`,
     },
     {
-      label: `Used: ${Math.round((memInformation.free / memInformation.total) * 100)}%`,
+      label: `Used: ${Math.round((memInformation.used / memInformation.total) * 100)}%`,
     }
   ]
 }
