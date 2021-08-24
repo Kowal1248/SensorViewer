@@ -1,7 +1,7 @@
 # SensorViewer
 Easy and simply solution to check temperatur and information about your components on linux in tray.
 
-##Used modules/components
+## Used modules/components
 - [TypeScript](https://www.typescriptlang.org/ "TypeScript")
 - [Electron](https://www.electronjs.org/ "Electron")
 - [systeminformation](https://systeminformation.io/ "systeminformation")
