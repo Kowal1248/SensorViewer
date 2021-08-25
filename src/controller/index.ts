@@ -76,7 +76,7 @@ export const controller = async () => {
   try {
     let appIcon: any = null
     app.whenReady().then(async () => {
-      appIcon = new Tray('./icons/temperature.png')
+      appIcon = new Tray('../assets/icons/temperature.png')
 
       setInterval(async () => {
         const contextMenu = Menu.buildFromTemplate(await _buildMenu());

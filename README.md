@@ -17,6 +17,10 @@ Easy and simply solution to check temperatur and information about your componen
 3. Install modules `npm install`
 4. Write command `npm start` and check ;)
 
+## Make package
+1. Install "electron-builder"
+2. Write command "npm run build:deb"
+
 ### To implement
 1. eslint/prettier
 2. Type/interfaces

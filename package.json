@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
+    "build:deb": "electron-builder --linux deb",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dawid Kowalczyk",
+  "author": {
+    "name": "Dawid Kowalczyk",
+    "email": "d.kowalczyk@overcore.tech"
+  },
   "license": "ISC",
   "devDependencies": {
     "electron": "^13.2.2",
